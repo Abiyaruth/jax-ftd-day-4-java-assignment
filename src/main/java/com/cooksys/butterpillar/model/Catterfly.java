@@ -1,34 +1,46 @@
 package com.cooksys.butterpillar.model;
 
+
 public class Catterfly {
-	
-	// any instance fields should be private
-
-	public double getWingspan() {
-		return 0; // to be implemented
+	 double Wingspan;
+	 double Weight;
+	public Catterfly()
+	{
+		
 	}
-
-	public void setWingspan(double wingspan) {
-		// to be implemented
-	}
-
-	public double getWeight() {
-		return 0; // TODO: to be implemented
-	}
-
-	public void setWeight(double weight) {
-		// TODO: to be implemented
+	public Catterfly(double Wingspan,double Weight)
+	{
+		this.Wingspan = Wingspan;
+		this.Weight=Weight;
 	}
 	
-	public boolean equals(Catterfly c) {
-		return false; // TODO: to be implemented
-	}
 	
+	public  double getWingspan() {
+		return Wingspan;
+	}
+	public  void setWingspan(double Wingspan) {
+		this.Wingspan = Wingspan;
+	}
+	public  double getWeight() {
+		return Weight;
+	}
+	public  void setWeight(double Weight) {
+		this.Weight = Weight;
+	}
+
+
 	@Override
 	public String toString() {
-		return null; // TODO: to be implemented
+		return "Catterfly [wingspan: " + Wingspan + ", weight: " +Weight + "]";
 	}
-	
+	public boolean equals(Catterfly c){
+		if(c.Wingspan!=Wingspan)
+		{
+			return false;
+		}else {
+			return true;
+		}
+		}
 	@Override
 	public boolean equals(Object o) {
 		if (o instanceof Catterfly) {
